@@ -41,7 +41,7 @@
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
-  - Link is 
+  - Link is https://aries101design.github.io/interior-consultant/
 - What was your experience?
   - Easy Took a little bit of time but fun
 - What have you learned/improved?

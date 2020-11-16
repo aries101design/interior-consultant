@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+    <link rel="icon" href="devchallenges.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Devchallenges | Om Gupta</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+
+   <nav>
+     <p class="logo" >The Interior</p>
+     <div class="hamburger">
+       <div class="line one"></div>
+       <div class="line two"></div>
+       <div class="line three"></div>
+     </div>
+     <ul class="nav-links">
+       <li><a href="">Home</a></li>
+       <li><a href="">Collections</a></li>
+       <li><a href="">About</a></li>
+       <li><a href="">Contact</a></li>
+
+     </ul>
+   </nav>
+
+    <section class="home">
+
+      <div class="text">
+        <h1 class="head">Modern interior</h1>
+        <p
+          class="data"
+        >A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+        <button class="read">Read more <i class="fas fa-arrow-right arrow"></i></button>
+      </div>
+
+      <div class="home__right">
+        <div class="image">
+          <img src="./photo1.png" alt="" class="img" />
+        </div>
+        <div class="card">
+          <div class="card__top">
+            <div class="avatar">
+              <img src="./photo2.png" class="avatar__image" alt="err" />
+            </div>
+            <div class="avatar__name">
+              <p class="name">Aliza Webber</p>
+              <p class="name__text">Interior designer</p>
+            </div>
+          </div>
+          <div class="card__bottom">Designed in 2020 by Aliza Webber</div>
+        </div>
+      </div>
+
+    </section>
+    <hr>
+    <div class="copy">Om Gupta @ devchallenges.io</div>
+
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      const links = document.querySelectorAll(".nav-links li");
+      const one = document.querySelector(".one");
+      const two = document.querySelector(".two");
+      const three = document.querySelector(".three");
+      hamburger.addEventListener("click",()=>{
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+          link.classList.toggle("fade");
+        });
+      });
+    </script>
+    <script src="https://kit.fontawesome.com/0675cdd2af.js" crossorigin="anonymous"></script>
+  </body>
+</html>
